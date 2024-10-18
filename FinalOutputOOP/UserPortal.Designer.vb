@@ -332,7 +332,7 @@ Partial Class UserPortal
         ' 
         ' Timer1
         ' 
-        Timer1.Interval = 10
+        Timer1.Interval = 5
         ' 
         ' Panel2
         ' 

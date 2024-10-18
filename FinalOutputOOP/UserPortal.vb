@@ -5,7 +5,7 @@
     Dim startX As Integer
     Dim targetX As Integer
     Dim timeElapsed As Double = 0
-    Dim duration As Double = 1.0 ' Duration in seconds
+    Dim duration As Double = 0.2 ' Duration in seconds
     Dim totalDistance As Integer
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

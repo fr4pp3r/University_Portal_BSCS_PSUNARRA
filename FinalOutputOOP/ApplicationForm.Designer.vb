@@ -83,7 +83,7 @@ Partial Class ApplicationForm
         ' 
         lblName.AutoSize = True
         lblName.BackColor = Color.Transparent
-        lblName.Font = New Font("Segoe UI", 36.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblName.Font = New Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblName.ForeColor = Color.FromArgb(CByte(20), CByte(82), CByte(80))
         lblName.Location = New Point(17, 201)
         lblName.Name = "lblName"
@@ -113,7 +113,7 @@ Partial Class ApplicationForm
         ' 
         ' Timer1
         ' 
-        Timer1.Interval = 10
+        Timer1.Interval = 5
         ' 
         ' ApplicationForm
         ' 
