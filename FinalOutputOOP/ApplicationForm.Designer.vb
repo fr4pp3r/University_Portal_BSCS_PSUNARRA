@@ -24,12 +24,12 @@ Partial Class ApplicationForm
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         pnlLogin = New Panel()
+        pnlMovable = New Panel()
         Label1 = New Label()
         lblSubname1 = New Label()
         lblName = New Label()
         PictureBox2 = New PictureBox()
         PictureBox1 = New PictureBox()
-        pnlMovable = New Panel()
         Timer1 = New Timer(components)
         pnlLogin.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
@@ -50,6 +50,14 @@ Partial Class ApplicationForm
         pnlLogin.Name = "pnlLogin"
         pnlLogin.Size = New Size(1004, 580)
         pnlLogin.TabIndex = 1
+        ' 
+        ' pnlMovable
+        ' 
+        pnlMovable.BackColor = Color.FromArgb(CByte(237), CByte(237), CByte(237))
+        pnlMovable.Location = New Point(604, 0)
+        pnlMovable.Name = "pnlMovable"
+        pnlMovable.Size = New Size(400, 580)
+        pnlMovable.TabIndex = 3
         ' 
         ' Label1
         ' 
@@ -75,7 +83,7 @@ Partial Class ApplicationForm
         ' 
         lblName.AutoSize = True
         lblName.BackColor = Color.Transparent
-        lblName.Font = New Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblName.Font = New Font("Segoe UI", 36.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblName.ForeColor = Color.FromArgb(CByte(20), CByte(82), CByte(80))
         lblName.Location = New Point(17, 201)
         lblName.Name = "lblName"
@@ -102,14 +110,6 @@ Partial Class ApplicationForm
         PictureBox1.Size = New Size(400, 257)
         PictureBox1.TabIndex = 4
         PictureBox1.TabStop = False
-        ' 
-        ' pnlMovable
-        ' 
-        pnlMovable.BackColor = Color.FromArgb(CByte(237), CByte(237), CByte(237))
-        pnlMovable.Location = New Point(604, 0)
-        pnlMovable.Name = "pnlMovable"
-        pnlMovable.Size = New Size(400, 580)
-        pnlMovable.TabIndex = 3
         ' 
         ' Timer1
         ' 
