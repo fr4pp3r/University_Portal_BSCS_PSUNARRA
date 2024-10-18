@@ -60,7 +60,7 @@ Partial Class RegisterForm
         FlowLayoutPanel1.Location = New Point(0, 0)
         FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         FlowLayoutPanel1.Padding = New Padding(10)
-        FlowLayoutPanel1.Size = New Size(400, 580)
+        FlowLayoutPanel1.Size = New Size(502, 580)
         FlowLayoutPanel1.TabIndex = 0
         ' 
         ' pnlSpacer1
@@ -68,7 +68,7 @@ Partial Class RegisterForm
         pnlSpacer1.Controls.Add(btnClose)
         pnlSpacer1.Location = New Point(13, 13)
         pnlSpacer1.Name = "pnlSpacer1"
-        pnlSpacer1.Size = New Size(380, 93)
+        pnlSpacer1.Size = New Size(477, 93)
         pnlSpacer1.TabIndex = 4
         ' 
         ' btnClose
@@ -93,18 +93,18 @@ Partial Class RegisterForm
         txtName.Margin = New Padding(0, 0, 15, 20)
         txtName.Name = "txtName"
         txtName.PlaceholderText = "Name"
-        txtName.Size = New Size(182, 30)
+        txtName.Size = New Size(226, 30)
         txtName.TabIndex = 0
         ' 
         ' txtSurname
         ' 
         txtSurname.Anchor = AnchorStyles.None
         txtSurname.Font = New Font("Segoe UI", 10.2F)
-        txtSurname.Location = New Point(207, 109)
+        txtSurname.Location = New Point(251, 109)
         txtSurname.Margin = New Padding(0, 0, 0, 20)
         txtSurname.Name = "txtSurname"
         txtSurname.PlaceholderText = "Surname"
-        txtSurname.Size = New Size(182, 30)
+        txtSurname.Size = New Size(239, 30)
         txtSurname.TabIndex = 1
         ' 
         ' txtUsername
@@ -115,7 +115,7 @@ Partial Class RegisterForm
         txtUsername.Margin = New Padding(0, 0, 0, 20)
         txtUsername.Name = "txtUsername"
         txtUsername.PlaceholderText = "Username"
-        txtUsername.Size = New Size(380, 30)
+        txtUsername.Size = New Size(480, 30)
         txtUsername.TabIndex = 3
         ' 
         ' txtCorpEmail
@@ -126,7 +126,7 @@ Partial Class RegisterForm
         txtCorpEmail.Margin = New Padding(0, 0, 0, 20)
         txtCorpEmail.Name = "txtCorpEmail"
         txtCorpEmail.PlaceholderText = "Corporate Email"
-        txtCorpEmail.Size = New Size(380, 30)
+        txtCorpEmail.Size = New Size(480, 30)
         txtCorpEmail.TabIndex = 4
         ' 
         ' txtPassword
@@ -138,7 +138,7 @@ Partial Class RegisterForm
         txtPassword.Name = "txtPassword"
         txtPassword.PasswordChar = "*"c
         txtPassword.PlaceholderText = "Password"
-        txtPassword.Size = New Size(350, 30)
+        txtPassword.Size = New Size(450, 30)
         txtPassword.TabIndex = 5
         ' 
         ' btnShowPass
@@ -147,7 +147,7 @@ Partial Class RegisterForm
         btnShowPass.BackgroundImageLayout = ImageLayout.Zoom
         btnShowPass.FlatAppearance.BorderSize = 0
         btnShowPass.FlatStyle = FlatStyle.Flat
-        btnShowPass.Location = New Point(360, 259)
+        btnShowPass.Location = New Point(460, 259)
         btnShowPass.Margin = New Padding(0, 0, 0, 15)
         btnShowPass.Name = "btnShowPass"
         btnShowPass.Size = New Size(30, 30)
@@ -164,7 +164,7 @@ Partial Class RegisterForm
         txtConfirmPass.Name = "txtConfirmPass"
         txtConfirmPass.PasswordChar = "*"c
         txtConfirmPass.PlaceholderText = "Confirm Password"
-        txtConfirmPass.Size = New Size(350, 30)
+        txtConfirmPass.Size = New Size(450, 30)
         txtConfirmPass.TabIndex = 6
         ' 
         ' btnShowConPass
@@ -174,7 +174,7 @@ Partial Class RegisterForm
         btnShowConPass.BackgroundImageLayout = ImageLayout.Zoom
         btnShowConPass.FlatAppearance.BorderSize = 0
         btnShowConPass.FlatStyle = FlatStyle.Flat
-        btnShowConPass.Location = New Point(360, 309)
+        btnShowConPass.Location = New Point(460, 309)
         btnShowConPass.Margin = New Padding(0, 0, 0, 15)
         btnShowConPass.Name = "btnShowConPass"
         btnShowConPass.Size = New Size(30, 30)
@@ -193,7 +193,7 @@ Partial Class RegisterForm
         btnRegister.Location = New Point(10, 359)
         btnRegister.Margin = New Padding(0, 0, 0, 15)
         btnRegister.Name = "btnRegister"
-        btnRegister.Size = New Size(380, 60)
+        btnRegister.Size = New Size(387, 60)
         btnRegister.TabIndex = 7
         btnRegister.Text = "Register"
         btnRegister.UseVisualStyleBackColor = False
@@ -204,7 +204,7 @@ Partial Class RegisterForm
         pnlDivider.BackColor = Color.Black
         pnlDivider.Location = New Point(13, 437)
         pnlDivider.Name = "pnlDivider"
-        pnlDivider.Size = New Size(380, 1)
+        pnlDivider.Size = New Size(480, 1)
         pnlDivider.TabIndex = 14
         ' 
         ' TableLayoutPanel1
@@ -216,7 +216,7 @@ Partial Class RegisterForm
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 1
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel1.Size = New Size(380, 88)
+        TableLayoutPanel1.Size = New Size(480, 88)
         TableLayoutPanel1.TabIndex = 15
         ' 
         ' btnReturnToLogin
@@ -226,7 +226,7 @@ Partial Class RegisterForm
         btnReturnToLogin.FlatAppearance.BorderSize = 0
         btnReturnToLogin.FlatStyle = FlatStyle.Flat
         btnReturnToLogin.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnReturnToLogin.Location = New Point(63, 15)
+        btnReturnToLogin.Location = New Point(113, 15)
         btnReturnToLogin.Margin = New Padding(15)
         btnReturnToLogin.Name = "btnReturnToLogin"
         btnReturnToLogin.Size = New Size(253, 58)
@@ -239,7 +239,7 @@ Partial Class RegisterForm
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(237), CByte(237), CByte(237))
-        ClientSize = New Size(400, 580)
+        ClientSize = New Size(502, 580)
         Controls.Add(FlowLayoutPanel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "RegisterForm"

@@ -54,9 +54,9 @@ Partial Class ApplicationForm
         ' pnlMovable
         ' 
         pnlMovable.BackColor = Color.FromArgb(CByte(237), CByte(237), CByte(237))
-        pnlMovable.Location = New Point(604, 0)
+        pnlMovable.Location = New Point(502, 0)
         pnlMovable.Name = "pnlMovable"
-        pnlMovable.Size = New Size(400, 580)
+        pnlMovable.Size = New Size(502, 580)
         pnlMovable.TabIndex = 3
         ' 
         ' Label1
@@ -73,7 +73,7 @@ Partial Class ApplicationForm
         ' lblSubname1
         ' 
         lblSubname1.BackColor = Color.Transparent
-        lblSubname1.Location = New Point(30, 272)
+        lblSubname1.Location = New Point(71, 281)
         lblSubname1.Name = "lblSubname1"
         lblSubname1.Size = New Size(358, 73)
         lblSubname1.TabIndex = 2
@@ -85,7 +85,7 @@ Partial Class ApplicationForm
         lblName.BackColor = Color.Transparent
         lblName.Font = New Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblName.ForeColor = Color.FromArgb(CByte(20), CByte(82), CByte(80))
-        lblName.Location = New Point(17, 201)
+        lblName.Location = New Point(58, 210)
         lblName.Name = "lblName"
         lblName.Size = New Size(371, 81)
         lblName.TabIndex = 0
@@ -95,7 +95,7 @@ Partial Class ApplicationForm
         ' 
         PictureBox2.BackgroundImage = My.Resources.Resources.schoolbooklogo
         PictureBox2.BackgroundImageLayout = ImageLayout.Zoom
-        PictureBox2.Location = New Point(3, 26)
+        PictureBox2.Location = New Point(49, 26)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(388, 212)
         PictureBox2.TabIndex = 5
@@ -105,9 +105,9 @@ Partial Class ApplicationForm
         ' 
         PictureBox1.BackgroundImage = My.Resources.Resources.Schoolbg
         PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
-        PictureBox1.Location = New Point(0, 381)
+        PictureBox1.Location = New Point(0, 347)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(400, 257)
+        PictureBox1.Size = New Size(501, 278)
         PictureBox1.TabIndex = 4
         PictureBox1.TabStop = False
         ' 

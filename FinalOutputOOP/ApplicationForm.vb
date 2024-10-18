@@ -115,7 +115,7 @@
     End Sub
 
     Public Sub movePaneltoRight()
-        MovePanel(pnlMovable, 604)
+        MovePanel(pnlMovable, 502)
     End Sub
 
     Public Function ToTitleCase(Text As String) As String

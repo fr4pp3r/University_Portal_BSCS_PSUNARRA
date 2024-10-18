@@ -21,7 +21,7 @@ Public Class LoginForm
     End Sub
 
     Private Sub btnCreateAccount_Click(sender As Object, e As EventArgs) Handles btnCreateAccount.Click
-        If ApplicationForm.pnlMovable.Location.X = 604 Then
+        If ApplicationForm.pnlMovable.Location.X = 502 Then
             ApplicationForm.movePaneltoLeft()
             ApplicationForm.CloseLoginForm()
             ApplicationForm.activatedForm = RegisterForm
@@ -32,4 +32,6 @@ Public Class LoginForm
     Private Sub lblForgot_Click(sender As Object, e As EventArgs) Handles lblForgot.Click
         MessageBox.Show("Contact the Administrator")
     End Sub
+
+
 End Class

@@ -52,15 +52,16 @@ Partial Class LoginForm
         pnlLogin.Location = New Point(0, 0)
         pnlLogin.Name = "pnlLogin"
         pnlLogin.Padding = New Padding(10)
-        pnlLogin.Size = New Size(400, 580)
+        pnlLogin.Size = New Size(502, 580)
         pnlLogin.TabIndex = 3
         ' 
         ' pnlSpacer1
         ' 
         pnlSpacer1.Controls.Add(btnClose)
-        pnlSpacer1.Location = New Point(13, 13)
+        pnlSpacer1.Location = New Point(10, 10)
+        pnlSpacer1.Margin = New Padding(0, 0, 0, 25)
         pnlSpacer1.Name = "pnlSpacer1"
-        pnlSpacer1.Size = New Size(380, 95)
+        pnlSpacer1.Size = New Size(483, 95)
         pnlSpacer1.TabIndex = 3
         ' 
         ' btnClose
@@ -70,7 +71,7 @@ Partial Class LoginForm
         btnClose.BackgroundImageLayout = ImageLayout.Zoom
         btnClose.FlatAppearance.BorderSize = 0
         btnClose.FlatStyle = FlatStyle.Flat
-        btnClose.Location = New Point(327, 3)
+        btnClose.Location = New Point(433, 0)
         btnClose.Name = "btnClose"
         btnClose.Size = New Size(50, 50)
         btnClose.TabIndex = 0
@@ -80,23 +81,23 @@ Partial Class LoginForm
         ' 
         txtUsername.Anchor = AnchorStyles.None
         txtUsername.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtUsername.Location = New Point(25, 126)
-        txtUsername.Margin = New Padding(15)
+        txtUsername.Location = New Point(13, 130)
+        txtUsername.Margin = New Padding(0, 0, 0, 25)
         txtUsername.Name = "txtUsername"
         txtUsername.PlaceholderText = "Username"
-        txtUsername.Size = New Size(365, 47)
+        txtUsername.Size = New Size(483, 47)
         txtUsername.TabIndex = 0
         ' 
         ' txtPassdword
         ' 
         txtPassdword.Anchor = AnchorStyles.None
         txtPassdword.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtPassdword.Location = New Point(25, 203)
-        txtPassdword.Margin = New Padding(15)
+        txtPassdword.Location = New Point(13, 202)
+        txtPassdword.Margin = New Padding(0, 0, 0, 25)
         txtPassdword.Name = "txtPassdword"
         txtPassdword.PasswordChar = "*"c
         txtPassdword.PlaceholderText = "Password"
-        txtPassdword.Size = New Size(365, 47)
+        txtPassdword.Size = New Size(483, 47)
         txtPassdword.TabIndex = 1
         ' 
         ' btnLogin
@@ -107,10 +108,10 @@ Partial Class LoginForm
         btnLogin.FlatStyle = FlatStyle.Flat
         btnLogin.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnLogin.ForeColor = Color.White
-        btnLogin.Location = New Point(25, 280)
-        btnLogin.Margin = New Padding(15)
+        btnLogin.Location = New Point(13, 274)
+        btnLogin.Margin = New Padding(0, 0, 0, 25)
         btnLogin.Name = "btnLogin"
-        btnLogin.Size = New Size(365, 60)
+        btnLogin.Size = New Size(483, 60)
         btnLogin.TabIndex = 2
         btnLogin.Text = "Login"
         btnLogin.UseVisualStyleBackColor = False
@@ -120,12 +121,12 @@ Partial Class LoginForm
         pnlForgotPassword.ColumnCount = 1
         pnlForgotPassword.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         pnlForgotPassword.Controls.Add(lblForgot, 0, 0)
-        pnlForgotPassword.Location = New Point(25, 355)
-        pnlForgotPassword.Margin = New Padding(15, 0, 15, 15)
+        pnlForgotPassword.Location = New Point(10, 359)
+        pnlForgotPassword.Margin = New Padding(0, 0, 0, 25)
         pnlForgotPassword.Name = "pnlForgotPassword"
         pnlForgotPassword.RowCount = 1
         pnlForgotPassword.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        pnlForgotPassword.Size = New Size(365, 24)
+        pnlForgotPassword.Size = New Size(483, 24)
         pnlForgotPassword.TabIndex = 4
         ' 
         ' lblForgot
@@ -133,7 +134,7 @@ Partial Class LoginForm
         lblForgot.Anchor = AnchorStyles.None
         lblForgot.AutoSize = True
         lblForgot.ForeColor = Color.RoyalBlue
-        lblForgot.Location = New Point(120, 2)
+        lblForgot.Location = New Point(179, 2)
         lblForgot.Name = "lblForgot"
         lblForgot.Size = New Size(125, 20)
         lblForgot.TabIndex = 0
@@ -143,9 +144,10 @@ Partial Class LoginForm
         ' 
         pnlDivider.Anchor = AnchorStyles.None
         pnlDivider.BackColor = Color.Black
-        pnlDivider.Location = New Point(25, 397)
+        pnlDivider.Location = New Point(13, 411)
         pnlDivider.Name = "pnlDivider"
-        pnlDivider.Size = New Size(365, 1)
+        pnlDivider.Padding = New Padding(0, 0, 0, 25)
+        pnlDivider.Size = New Size(483, 1)
         pnlDivider.TabIndex = 6
         ' 
         ' btnCreateAccount
@@ -155,8 +157,8 @@ Partial Class LoginForm
         btnCreateAccount.FlatAppearance.BorderSize = 0
         btnCreateAccount.FlatStyle = FlatStyle.Flat
         btnCreateAccount.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnCreateAccount.Location = New Point(81, 416)
-        btnCreateAccount.Margin = New Padding(15)
+        btnCreateAccount.Location = New Point(128, 440)
+        btnCreateAccount.Margin = New Padding(0, 25, 0, 0)
         btnCreateAccount.Name = "btnCreateAccount"
         btnCreateAccount.Size = New Size(253, 60)
         btnCreateAccount.TabIndex = 5
@@ -167,7 +169,7 @@ Partial Class LoginForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(400, 580)
+        ClientSize = New Size(502, 580)
         Controls.Add(pnlLogin)
         FormBorderStyle = FormBorderStyle.None
         Name = "LoginForm"
