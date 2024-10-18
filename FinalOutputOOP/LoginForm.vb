@@ -13,7 +13,7 @@ Public Class LoginForm
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        FreebookForm.Login(username, password)
+        ApplicationForm.Login(username, password)
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
@@ -21,10 +21,10 @@ Public Class LoginForm
     End Sub
 
     Private Sub btnCreateAccount_Click(sender As Object, e As EventArgs) Handles btnCreateAccount.Click
-        If FreebookForm.pnlMovable.Location.X = 604 Then
-            FreebookForm.movePaneltoLeft()
-            FreebookForm.CloseLoginForm()
-            FreebookForm.activatedForm = RegisterForm
+        If ApplicationForm.pnlMovable.Location.X = 604 Then
+            ApplicationForm.movePaneltoLeft()
+            ApplicationForm.CloseLoginForm()
+            ApplicationForm.activatedForm = RegisterForm
         End If
 
     End Sub

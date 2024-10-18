@@ -1,4 +1,4 @@
-﻿Public Class FreebookForm
+﻿Public Class ApplicationForm
     Dim Users As New Dictionary(Of String, UserClass)
     Dim username As String
     Dim password As String
@@ -17,8 +17,8 @@
     Dim panelToMove As Panel
 
     Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Users.Add("admin", New UserClass("nathanielbetita83@gmail.com", "Nathaniel", "Betita", "admin", "admin"))
-        Users.Add("asd", New UserClass("asd", "asd", "asd", "asd", "asd"))
+        Users.Add("admin", New UserClass("admin@gmail.com", "admin", "nistrator", "admin", "admin"))
+        Users.Add("sir_kiwi", New UserClass("nathanielbetita83@gmail.com", "Nathaniel", "Betita", "sir_kiwi", "N@+han1232000s"))
         OpenForm(LoginForm)
     End Sub
 
@@ -83,7 +83,7 @@
             MessageBox.Show("Input Username")
 
         Else
-            If Users.TryGetValue(username, userInfo) Then
+            If Users.TryGetValue(username.ToLower(), userInfo) Then
                 If userInfo.Password = password Then
                     If userInfo.Username.ToLower = "admin" Then
                         AdminForm.Show()
@@ -137,8 +137,8 @@ Public Class UserClass
 
     Public Sub New(Email As String, Name As String, Surname As String, Username As String, Password As String)
         Me.Email = Email.ToLower()
-        Me.Name = FreebookForm.ToTitleCase(Name)
-        Me.Surname = FreebookForm.ToTitleCase(Surname)
+        Me.Name = ApplicationForm.ToTitleCase(Name)
+        Me.Surname = ApplicationForm.ToTitleCase(Surname)
         Me.Username = Username.ToLower()
         Me.Password = Password
     End Sub

@@ -121,17 +121,20 @@
   <data name="463026965_122187437492182671_3265398024533083630_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\463026965_122187437492182671_3265398024533083630_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user@2x1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2x\user@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="xmark@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xmark@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar-days@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2x\calendar-days@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user@15x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\15x\user@15x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menu-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1x\menu-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="xmark@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2x\xmark@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aspect-ratio-square-2@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2x\aspect-ratio-square-2@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,20 +142,17 @@
   <data name="eye-open@1.5x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.5x\eye-open@1.5x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Schoolbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Schoolbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minus@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2x\minus@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user-5@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-5@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="calendar-days@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2x\calendar-days@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bell@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2x\bell@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="xmark@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xmark@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user@2x1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2x\user@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2x\user@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,7 +163,7 @@
   <data name="book-bookmark@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2x\book-bookmark@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1x\menu-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="schoolbooklogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\schoolbooklogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
