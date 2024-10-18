@@ -86,7 +86,8 @@
             If Users.TryGetValue(username.ToLower(), userInfo) Then
                 If userInfo.Password = password Then
                     If userInfo.Username.ToLower = "admin" Then
-                        AdminForm.Show()
+                        'AdminForm.Show()
+                        progresschuchu.Show()
                         Me.Close()
                     Else
                         UserPortal.Show()
