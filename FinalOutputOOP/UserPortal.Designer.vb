@@ -150,7 +150,7 @@ Partial Class UserPortal
         btnClose.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         btnClose.CustomizableEdges = CustomizableEdges18
         btnClose.FillColor = Color.Transparent
-        btnClose.HoverState.FillColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
+        btnClose.HoverState.FillColor = Color.Firebrick
         btnClose.IconColor = Color.White
         btnClose.Location = New Point(976, 8)
         btnClose.Name = "btnClose"
@@ -453,7 +453,7 @@ Partial Class UserPortal
         pnlSideBar.MinimumSize = New Size(50, 0)
         pnlSideBar.Name = "pnlSideBar"
         pnlSideBar.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        pnlSideBar.Size = New Size(150, 718)
+        pnlSideBar.Size = New Size(50, 718)
         pnlSideBar.TabIndex = 4
         ' 
         ' btnLogout
@@ -584,7 +584,7 @@ Partial Class UserPortal
         btnToggleSidebar.Location = New Point(0, 0)
         btnToggleSidebar.Name = "btnToggleSidebar"
         btnToggleSidebar.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        btnToggleSidebar.Size = New Size(150, 50)
+        btnToggleSidebar.Size = New Size(50, 50)
         btnToggleSidebar.TabIndex = 0
         ' 
         ' UserPortal
