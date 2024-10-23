@@ -30,7 +30,7 @@ Partial Class AdminForm
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.BackColor = Color.FromArgb(CByte(189), CByte(206), CByte(185))
+        PictureBox1.BackColor = Color.FromArgb(189, 206, 185)
         PictureBox1.BackgroundImage = My.Resources.Resources._463026965_122187437492182671_3265398024533083630_n
         PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
         PictureBox1.Dock = DockStyle.Bottom
@@ -44,7 +44,7 @@ Partial Class AdminForm
         ' 
         Label1.AutoSize = True
         Label1.Dock = DockStyle.Left
-        Label1.Font = New Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0)
         Label1.Location = New Point(0, 0)
         Label1.Name = "Label1"
         Label1.Size = New Size(563, 62)
@@ -66,9 +66,9 @@ Partial Class AdminForm
         ' 
         ' AdminForm
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(189), CByte(206), CByte(185))
+        BackColor = Color.FromArgb(189, 206, 185)
         ClientSize = New Size(1024, 576)
         Controls.Add(Button1)
         Controls.Add(Label1)
