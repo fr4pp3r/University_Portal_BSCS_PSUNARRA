@@ -21,11 +21,11 @@ Public Class LoginForm
     End Sub
 
     Private Sub btnCreateAccount_Click(sender As Object, e As EventArgs) Handles btnCreateAccount.Click
-        If ApplicationForm.pnlMovable.Location.X = 502 Then
-            ApplicationForm.movePaneltoLeft()
+        'If ApplicationForm.pnlMovable.Location.X = 502 Then
+        ApplicationForm.movePaneltoLeft()
             ApplicationForm.CloseLoginForm()
             ApplicationForm.activatedForm = RegisterForm
-        End If
+        'End If
 
     End Sub
 
@@ -33,5 +33,11 @@ Public Class LoginForm
         MessageBox.Show("Contact the Administrator")
     End Sub
 
-
+    Private Sub txtPassdword_IconRightClick(sender As Object, e As EventArgs) Handles txtPassdword.IconRightClick
+        If txtPassdword.PasswordChar = "*" Then
+            txtPassdword.PasswordChar = ""
+        Else
+            txtPassdword.PasswordChar = "*"
+        End If
+    End Sub
 End Class

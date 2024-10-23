@@ -5,6 +5,7 @@
     Dim userInfo As UserClass
 
     Public activatedForm As Form
+    Public activeUser As UserClass
 
     'For the ease in function
     Dim startX As Integer
@@ -18,7 +19,7 @@
 
     Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Users.Add("admin", New UserClass("admin@gmail.com", "admin", "nistrator", "admin", "admin"))
-        Users.Add("sir_kiwi", New UserClass("nathanielbetita83@gmail.com", "Nathaniel", "Betita", "sir_kiwi", "N@+han1232000s"))
+        Users.Add("nathan", New UserClass("nathanielbetita83@gmail.com", "Nathaniel", "Betita", "nathan", "1234"))
         OpenForm(LoginForm)
     End Sub
 
@@ -57,6 +58,9 @@
         ' Move the panel
         panelToMove.Location = New Point(newX, panelToMove.Location.Y)
 
+        pnlMovable.Refresh()
+
+
         ' Stop the timer when animation completes
         If timeElapsed >= duration Then
             Timer1.Stop()
@@ -85,13 +89,13 @@
         Else
             If Users.TryGetValue(username.ToLower(), userInfo) Then
                 If userInfo.Password = password Then
+                    activeUser = userInfo
                     If userInfo.Username.ToLower = "admin" Then
                         'AdminForm.Show()
                         progresschuchu.Show()
                         Me.Close()
                     Else
                         UserPortal.Show()
-                        UserPortal.populateForm(userInfo)
                         Me.Close()
                     End If
                 Else
@@ -104,12 +108,17 @@
 
     End Sub
 
-    Public Sub Register(Email As String, Name As String, Surname As String, Username As String, Password As String)
+    Public Function Register(Email As String, Name As String, Surname As String, Username As String, Password As String) As Integer
         Dim tempUser As UserClass
-        tempUser = New UserClass(Email, Name, Surname, Username, Password)
-        Users.Add(tempUser.Username, tempUser)
-        MessageBox.Show("Account succesfully Created! Returning to login page")
-    End Sub
+        If Users.ContainsKey(Username.ToLower()) Then
+            MessageBox.Show("username already exist")
+            Return 0
+        Else
+            tempUser = New UserClass(Email, Name, Surname, Username, Password)
+            Users.Add(tempUser.Username, tempUser)
+            Return 1
+        End If
+    End Function
 
     Public Sub movePaneltoLeft()
         MovePanel(pnlMovable, 0)
@@ -126,7 +135,6 @@
         Text = New String(temparray)
         Return Text
     End Function
-
 End Class
 
 Public Class UserClass

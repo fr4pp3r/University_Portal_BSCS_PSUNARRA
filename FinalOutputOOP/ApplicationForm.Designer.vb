@@ -23,14 +23,17 @@ Partial Class ApplicationForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         pnlLogin = New Panel()
-        pnlMovable = New Panel()
+        pnlMovable = New Guna.UI2.WinForms.Guna2Panel()
         Label1 = New Label()
         lblSubname1 = New Label()
         lblName = New Label()
         PictureBox2 = New PictureBox()
         PictureBox1 = New PictureBox()
         Timer1 = New Timer(components)
+        Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         pnlLogin.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -46,24 +49,30 @@ Partial Class ApplicationForm
         pnlLogin.Controls.Add(PictureBox2)
         pnlLogin.Controls.Add(PictureBox1)
         pnlLogin.Dock = DockStyle.Fill
-        pnlLogin.Location = New Point(10, 10)
+        pnlLogin.Location = New Point(0, 0)
         pnlLogin.Name = "pnlLogin"
-        pnlLogin.Size = New Size(1004, 580)
+        pnlLogin.Size = New Size(1024, 600)
         pnlLogin.TabIndex = 1
         ' 
         ' pnlMovable
         ' 
-        pnlMovable.BackColor = Color.FromArgb(CByte(237), CByte(237), CByte(237))
+        pnlMovable.Anchor = AnchorStyles.None
+        pnlMovable.BackColor = SystemColors.Control
+        pnlMovable.BorderColor = Color.Transparent
+        pnlMovable.BorderThickness = 5
+        pnlMovable.CustomizableEdges = CustomizableEdges1
+        pnlMovable.FillColor = Color.Transparent
         pnlMovable.Location = New Point(502, 0)
         pnlMovable.Name = "pnlMovable"
-        pnlMovable.Size = New Size(502, 580)
-        pnlMovable.TabIndex = 3
+        pnlMovable.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        pnlMovable.Size = New Size(522, 600)
+        pnlMovable.TabIndex = 7
         ' 
         ' Label1
         ' 
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.FromArgb(CByte(20), CByte(82), CByte(80))
+        Label1.ForeColor = Color.FromArgb(CByte(207), CByte(121), CByte(29))
         Label1.Location = New Point(633, 201)
         Label1.Name = "Label1"
         Label1.Size = New Size(371, 202)
@@ -84,7 +93,7 @@ Partial Class ApplicationForm
         lblName.AutoSize = True
         lblName.BackColor = Color.Transparent
         lblName.Font = New Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblName.ForeColor = Color.FromArgb(CByte(20), CByte(82), CByte(80))
+        lblName.ForeColor = Color.FromArgb(CByte(207), CByte(121), CByte(29))
         lblName.Location = New Point(58, 210)
         lblName.Name = "lblName"
         lblName.Size = New Size(371, 81)
@@ -113,19 +122,26 @@ Partial Class ApplicationForm
         ' 
         ' Timer1
         ' 
-        Timer1.Interval = 5
+        Timer1.Interval = 10
+        ' 
+        ' Guna2BorderlessForm1
+        ' 
+        Guna2BorderlessForm1.BorderRadius = 50
+        Guna2BorderlessForm1.ContainerControl = Me
+        Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
+        Guna2BorderlessForm1.ResizeForm = False
+        Guna2BorderlessForm1.TransparentWhileDrag = True
         ' 
         ' ApplicationForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(189), CByte(206), CByte(185))
+        BackColor = Color.FromArgb(CByte(230), CByte(185), CByte(138))
         ClientSize = New Size(1024, 600)
         Controls.Add(pnlLogin)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "ApplicationForm"
-        Padding = New Padding(10)
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
         pnlLogin.ResumeLayout(False)
@@ -138,9 +154,9 @@ Partial Class ApplicationForm
     Friend WithEvents lblName As Label
     Friend WithEvents lblSubname1 As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents pnlMovable As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
-
+    Friend WithEvents pnlMovable As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
 End Class

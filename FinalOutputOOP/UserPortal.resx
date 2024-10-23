@@ -117,10 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblBio.Text" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu leo ut nibh varius aliquet at non mi. Integer ac dui efficitur, elementum risus vel, sollicitudin lorem. Suspendisse nec euismod augue. Phasellus a elit rutrum, bibendum tortor at, malesuada dolor. Nulla gravida feugiat lectus, sed maximus quam volutpat faucibus. Mauris sed magna dui. Suspendisse et blandit metus. Mauris sodales odio iaculis urna malesuada aliquet. Fusce id sapien dui. In ac nunc sit amet augue tincidunt ultrices. Nulla facilisi. Nulla facilisi. Praesent tincidunt vehicula placerat. Morbi purus turpis, fringilla vitae interdum iaculis, facilisis eget velit. Mauris sollicitudin quis ligula nec tempor. Praesent porta sed ante et euismod. Sed malesuada orci ut vulputate sodales. Mauris nec augue at orci scelerisque hendrerit. Curabitur imperdiet luctus interdum. Aliquam ut convallis leo. Duis euismod tincidunt turpis, eu volutpat nisi vestibulum nec. Quisque varius aliquet sapien, ut ullamcorper elit ornare id. Nulla a ligula massa. </value>
-  </data>
   <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>34, 20</value>
+  </metadata>
+  <metadata name="Guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>140, 20</value>
+  </metadata>
+  <metadata name="Guna2ShadowForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>349, 20</value>
   </metadata>
 </root>

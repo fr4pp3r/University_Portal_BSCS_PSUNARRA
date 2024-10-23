@@ -22,15 +22,17 @@ Partial Class AdminForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         PictureBox1 = New PictureBox()
         Label1 = New Label()
-        Button1 = New Button()
+        Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.BackColor = Color.FromArgb(CByte(189), CByte(206), CByte(185))
+        PictureBox1.BackColor = Color.FromArgb(CByte(255), CByte(164), CByte(67))
         PictureBox1.BackgroundImage = My.Resources.Resources._463026965_122187437492182671_3265398024533083630_n
         PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
         PictureBox1.Dock = DockStyle.Bottom
@@ -51,26 +53,26 @@ Partial Class AdminForm
         Label1.TabIndex = 1
         Label1.Text = "Welcome to admin page"
         ' 
-        ' Button1
+        ' Guna2ControlBox1
         ' 
-        Button1.BackgroundImage = My.Resources.Resources.xmark_4x
-        Button1.BackgroundImageLayout = ImageLayout.Zoom
-        Button1.Dock = DockStyle.Right
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Location = New Point(959, 0)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(65, 65)
-        Button1.TabIndex = 2
-        Button1.UseVisualStyleBackColor = True
+        Guna2ControlBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Guna2ControlBox1.CustomizableEdges = CustomizableEdges1
+        Guna2ControlBox1.FillColor = Color.Transparent
+        Guna2ControlBox1.HoverState.FillColor = Color.Brown
+        Guna2ControlBox1.IconColor = Color.White
+        Guna2ControlBox1.Location = New Point(956, 12)
+        Guna2ControlBox1.Name = "Guna2ControlBox1"
+        Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2ControlBox1.Size = New Size(56, 36)
+        Guna2ControlBox1.TabIndex = 2
         ' 
         ' AdminForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(189), CByte(206), CByte(185))
+        BackColor = Color.FromArgb(CByte(255), CByte(164), CByte(67))
         ClientSize = New Size(1024, 576)
-        Controls.Add(Button1)
+        Controls.Add(Guna2ControlBox1)
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
         FormBorderStyle = FormBorderStyle.None
@@ -84,5 +86,5 @@ Partial Class AdminForm
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
 End Class

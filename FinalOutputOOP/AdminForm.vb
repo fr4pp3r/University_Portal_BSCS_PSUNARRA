@@ -1,5 +1,5 @@
 ﻿Public Class AdminForm
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Guna2ControlBox1_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox1.Click
         Application.Exit()
     End Sub
 End Class
