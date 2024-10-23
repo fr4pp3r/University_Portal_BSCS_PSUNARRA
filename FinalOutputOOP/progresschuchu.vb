@@ -1,9 +1,9 @@
 ﻿Public Class progresschuchu
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Dim result As DialogResult
-        ProgressBar1.Increment(1)
+        Guna2ProgressBar1.Increment(1)
 
-        If ProgressBar1.Value = 50 Then
+        If Guna2ProgressBar1.Value = 50 Then
             Timer1.Stop()
             result = MessageBox.Show("Are you sure?", "There is no going back...", MessageBoxButtons.YesNo)
             If result = DialogResult.No Then
@@ -13,7 +13,7 @@
             End If
         End If
 
-        If ProgressBar1.Value = 100 Then
+        If Guna2ProgressBar1.Value = 100 Then
             AdminForm.Show()
             Timer1.Stop()
             Me.Close()

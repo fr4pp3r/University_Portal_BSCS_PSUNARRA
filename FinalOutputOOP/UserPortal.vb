@@ -1,5 +1,5 @@
 ﻿Public Class UserPortal
-    Dim SidebarState = True
+    Dim SidebarState = False
 
 
     Dim startX As Integer
@@ -13,9 +13,9 @@
         timeElapsed += Timer1.Interval / 1000.0
 
         ' Calculate the current position using the easing function
-        Dim progress As Double = Math.Min(timeElapsed / duration, 1) ' Normalize time (0 to 1)
-        Dim easedProgress As Double = EaseInOutSine(progress) ' Apply easing function
-        Dim newX As Integer = startX + CInt(totalDistance * easedProgress)
+        Dim progress = Math.Min(timeElapsed / duration, 1) ' Normalize time (0 to 1)
+        Dim easedProgress = EaseInOutSine(progress) ' Apply easing function
+        Dim newX = startX + CInt(totalDistance * easedProgress)
 
         ' Move the panel
         pnlSideBar.Width = newX
@@ -23,12 +23,9 @@
         ' Stop the timer when animation completes
         If timeElapsed >= duration Then
             Timer1.Stop()
+
             If SidebarState = True Then
-                btnInfo.Text = "Student Info"
-                btnClasses.Text = "Classes"
-                btnCalendar.Text = "Calendar"
-                btnNotifications.Text = "Notifications"
-                btnLogout.Text = "Logout"
+
             End If
         End If
     End Sub
@@ -45,48 +42,50 @@
         Timer1.Start()
     End Sub
 
-    Public Sub populateForm(userInfo As UserClass)
-        lblFullname.Text = userInfo.Name + " " + userInfo.Surname
-        lblEmail.Text = userInfo.Email
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        ApplicationForm.Show()
+        Close()
+    End Sub
+
+
+    Private Sub btnToggleSidebar_Click(sender As Object, e As EventArgs) Handles btnToggleSidebar.Click
+        If SidebarState = True Then
+            MovePanel(50)
+            SidebarState = False
+        Else
+            MovePanel(150)
+            SidebarState = True
+        End If
+    End Sub
+
+    Private Sub UserPortal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblFullname.Text = ApplicationForm.activeUser.Name + " " + ApplicationForm.activeUser.Surname
+        lblEmail.Text = ApplicationForm.activeUser.Email
+    End Sub
+
+    Private Sub btnBio_Click(sender As Object, e As EventArgs) Handles btnBio.Click
+        Guna2TabControl1.SelectedTab = tbBio
+    End Sub
+
+    Private Sub btnClasses_Click(sender As Object, e As EventArgs) Handles btnClasses.Click
+        Guna2TabControl1.SelectedTab = tbClasses
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Application.Exit()
     End Sub
 
-    Private Sub btnMax_Click(sender As Object, e As EventArgs) Handles btnMax.Click
-        If Me.WindowState = FormWindowState.Normal Then
-            Me.WindowState = FormWindowState.Maximized
-        Else
-            Me.WindowState = FormWindowState.Normal
-        End If
+    Private Sub btnNotifications_Click(sender As Object, e As EventArgs) Handles btnNotifications.Click
+        Guna2TabControl1.SelectedTab = tbNotifications
     End Sub
 
-    Private Sub btnMin_Click(sender As Object, e As EventArgs) Handles btnMin.Click
-        If Me.WindowState = FormWindowState.Normal Then
-            Me.WindowState = FormWindowState.Minimized
-        Else
-            Me.WindowState = FormWindowState.Normal
-        End If
+    Private Sub pnlSideBar_MouseEnter(sender As Object, e As EventArgs) Handles pnlSideBar.MouseEnter, btnBio.MouseEnter, btnClasses.MouseEnter, btnNotifications.MouseEnter, btnLogout.MouseEnter
+        MovePanel(150)
+        SidebarState = True
     End Sub
 
-    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
-        ApplicationForm.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub btnToggleSideBar_Click(sender As Object, e As EventArgs) Handles btnToggleSideBar.Click
-        If SidebarState = True Then
-            MovePanel(50)
-            btnInfo.Text = ""
-            btnClasses.Text = ""
-            btnCalendar.Text = ""
-            btnNotifications.Text = ""
-            btnLogout.Text = ""
-            SidebarState = False
-        Else
-            MovePanel(174)
-            SidebarState = True
-        End If
+    Private Sub pnlSideBar_MouseLeave(sender As Object, e As EventArgs) Handles pnlSideBar.MouseLeave, btnBio.MouseLeave, btnClasses.MouseLeave, btnNotifications.MouseLeave, btnLogout.MouseLeave
+        MovePanel(50)
+        SidebarState = False
     End Sub
 End Class

@@ -23,33 +23,40 @@ Partial Class progresschuchu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        ProgressBar1 = New ProgressBar()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Timer1 = New Timer(components)
+        Guna2ProgressBar1 = New Guna.UI2.WinForms.Guna2ProgressBar()
         SuspendLayout()
-        ' 
-        ' ProgressBar1
-        ' 
-        ProgressBar1.Location = New Point(12, 12)
-        ProgressBar1.Name = "ProgressBar1"
-        ProgressBar1.Size = New Size(616, 29)
-        ProgressBar1.TabIndex = 0
         ' 
         ' Timer1
         ' 
         Timer1.Interval = 10
+        ' 
+        ' Guna2ProgressBar1
+        ' 
+        Guna2ProgressBar1.CustomizableEdges = CustomizableEdges1
+        Guna2ProgressBar1.Location = New Point(12, 12)
+        Guna2ProgressBar1.Name = "Guna2ProgressBar1"
+        Guna2ProgressBar1.ProgressColor = Color.FromArgb(CByte(148), CByte(87), CByte(23))
+        Guna2ProgressBar1.ProgressColor2 = Color.FromArgb(CByte(148), CByte(87), CByte(23))
+        Guna2ProgressBar1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2ProgressBar1.Size = New Size(616, 29)
+        Guna2ProgressBar1.TabIndex = 0
+        Guna2ProgressBar1.Text = "Guna2ProgressBar1"
+        Guna2ProgressBar1.TextRenderingHint = Drawing.Text.TextRenderingHint.SystemDefault
         ' 
         ' progresschuchu
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(640, 53)
-        Controls.Add(ProgressBar1)
+        Controls.Add(Guna2ProgressBar1)
         Name = "progresschuchu"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Loading Admin Panel..."
         ResumeLayout(False)
     End Sub
-
-    Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Guna2ProgressBar1 As Guna.UI2.WinForms.Guna2ProgressBar
 End Class
