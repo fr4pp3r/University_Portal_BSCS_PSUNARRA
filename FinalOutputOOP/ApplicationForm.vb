@@ -4,6 +4,7 @@
     Dim password As String
     Dim userInfo As UserClass
 
+
     Public activatedForm As Form
     Public activeUser As UserClass
 
@@ -105,7 +106,14 @@
                 MessageBox.Show("User does not exist, click register NOW!")
             End If
         End If
+    End Sub
 
+    Public Sub ForgotPassword(username As String)
+        If Users.TryGetValue(username.ToLower(), userInfo) Then
+            MessageBox.Show("Password is: " + userInfo.Password)
+        Else
+            MessageBox.Show("User does not exist")
+        End If
     End Sub
 
     Public Function Register(Email As String, Name As String, Surname As String, Username As String, Password As String) As Integer

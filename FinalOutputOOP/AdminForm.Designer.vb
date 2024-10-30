@@ -68,8 +68,7 @@ Partial Class AdminForm
         ' 
         ' AdminForm
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
-        AutoScaleMode = AutoScaleMode.Font
+        AutoScaleMode = AutoScaleMode.None
         BackColor = Color.FromArgb(CByte(255), CByte(164), CByte(67))
         ClientSize = New Size(1024, 576)
         Controls.Add(Guna2ControlBox1)

@@ -51,6 +51,9 @@ Partial Class RegisterForm
         txtUsername = New Guna.UI2.WinForms.Guna2TextBox()
         txtCorpEmail = New Guna.UI2.WinForms.Guna2TextBox()
         txtPassword = New Guna.UI2.WinForms.Guna2TextBox()
+        Panel2 = New Panel()
+        lblPassStrengthIndicator = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        pnlStrengthIndicator = New Panel()
         txtConfirmPass = New Guna.UI2.WinForms.Guna2TextBox()
         Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
         rbtnStudent = New Guna.UI2.WinForms.Guna2RadioButton()
@@ -63,6 +66,7 @@ Partial Class RegisterForm
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         FlowLayoutPanel1.SuspendLayout()
         pnlSpacer1.SuspendLayout()
+        Panel2.SuspendLayout()
         Guna2GroupBox1.SuspendLayout()
         FlowLayoutPanel2.SuspendLayout()
         SuspendLayout()
@@ -75,6 +79,7 @@ Partial Class RegisterForm
         FlowLayoutPanel1.Controls.Add(txtUsername)
         FlowLayoutPanel1.Controls.Add(txtCorpEmail)
         FlowLayoutPanel1.Controls.Add(txtPassword)
+        FlowLayoutPanel1.Controls.Add(Panel2)
         FlowLayoutPanel1.Controls.Add(txtConfirmPass)
         FlowLayoutPanel1.Controls.Add(Guna2GroupBox1)
         FlowLayoutPanel1.Controls.Add(FlowLayoutPanel2)
@@ -237,7 +242,7 @@ Partial Class RegisterForm
         txtPassword.IconRight = My.Resources.Resources.eye_open_1_5x
         txtPassword.IconRightOffset = New Point(5, 0)
         txtPassword.Location = New Point(10, 198)
-        txtPassword.Margin = New Padding(0, 0, 0, 20)
+        txtPassword.Margin = New Padding(0)
         txtPassword.Name = "txtPassword"
         txtPassword.PasswordChar = "*"c
         txtPassword.PlaceholderForeColor = Color.DimGray
@@ -247,6 +252,36 @@ Partial Class RegisterForm
         txtPassword.Size = New Size(500, 30)
         txtPassword.TabIndex = 5
         txtPassword.TextOffset = New Point(10, 0)
+        ' 
+        ' Panel2
+        ' 
+        Panel2.Controls.Add(lblPassStrengthIndicator)
+        Panel2.Controls.Add(pnlStrengthIndicator)
+        Panel2.Location = New Point(10, 228)
+        Panel2.Margin = New Padding(0)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(500, 40)
+        Panel2.TabIndex = 15
+        ' 
+        ' lblPassStrengthIndicator
+        ' 
+        lblPassStrengthIndicator.BackColor = Color.Transparent
+        lblPassStrengthIndicator.Font = New Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblPassStrengthIndicator.Location = New Point(10, 8)
+        lblPassStrengthIndicator.Margin = New Padding(0)
+        lblPassStrengthIndicator.Name = "lblPassStrengthIndicator"
+        lblPassStrengthIndicator.Size = New Size(73, 25)
+        lblPassStrengthIndicator.TabIndex = 14
+        lblPassStrengthIndicator.Text = "Strength:"
+        ' 
+        ' pnlStrengthIndicator
+        ' 
+        pnlStrengthIndicator.BackColor = Color.LimeGreen
+        pnlStrengthIndicator.Location = New Point(101, 17)
+        pnlStrengthIndicator.Margin = New Padding(0, 5, 0, 5)
+        pnlStrengthIndicator.Name = "pnlStrengthIndicator"
+        pnlStrengthIndicator.Size = New Size(20, 10)
+        pnlStrengthIndicator.TabIndex = 13
         ' 
         ' txtConfirmPass
         ' 
@@ -265,7 +300,7 @@ Partial Class RegisterForm
         txtConfirmPass.HoverState.BorderColor = Color.FromArgb(CByte(207), CByte(121), CByte(29))
         txtConfirmPass.IconRight = My.Resources.Resources.eye_open_1_5x
         txtConfirmPass.IconRightOffset = New Point(5, 0)
-        txtConfirmPass.Location = New Point(10, 248)
+        txtConfirmPass.Location = New Point(10, 268)
         txtConfirmPass.Margin = New Padding(0, 0, 0, 20)
         txtConfirmPass.Name = "txtConfirmPass"
         txtConfirmPass.PasswordChar = "*"c
@@ -287,7 +322,7 @@ Partial Class RegisterForm
         Guna2GroupBox1.CustomizableEdges = CustomizableEdges15
         Guna2GroupBox1.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Guna2GroupBox1.ForeColor = Color.White
-        Guna2GroupBox1.Location = New Point(10, 298)
+        Guna2GroupBox1.Location = New Point(10, 318)
         Guna2GroupBox1.Margin = New Padding(0, 0, 0, 20)
         Guna2GroupBox1.Name = "Guna2GroupBox1"
         Guna2GroupBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges16
@@ -372,7 +407,7 @@ Partial Class RegisterForm
         FlowLayoutPanel2.Controls.Add(btnRegister)
         FlowLayoutPanel2.Controls.Add(btnReturnToLogin)
         FlowLayoutPanel2.FlowDirection = FlowDirection.TopDown
-        FlowLayoutPanel2.Location = New Point(10, 404)
+        FlowLayoutPanel2.Location = New Point(10, 424)
         FlowLayoutPanel2.Margin = New Padding(0, 0, 0, 20)
         FlowLayoutPanel2.Name = "FlowLayoutPanel2"
         FlowLayoutPanel2.Size = New Size(500, 156)
@@ -381,12 +416,12 @@ Partial Class RegisterForm
         ' pnlForgotPassword
         ' 
         pnlForgotPassword.ColumnCount = 1
-        pnlForgotPassword.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
+        pnlForgotPassword.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         pnlForgotPassword.Location = New Point(0, 0)
         pnlForgotPassword.Margin = New Padding(0)
         pnlForgotPassword.Name = "pnlForgotPassword"
         pnlForgotPassword.RowCount = 1
-        pnlForgotPassword.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        pnlForgotPassword.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
         pnlForgotPassword.Size = New Size(500, 10)
         pnlForgotPassword.TabIndex = 11
         ' 
@@ -451,7 +486,7 @@ Partial Class RegisterForm
         ' 
         ' RegisterForm
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(237), CByte(237), CByte(237))
         ClientSize = New Size(522, 600)
@@ -461,6 +496,8 @@ Partial Class RegisterForm
         Text = "RegisterForm"
         FlowLayoutPanel1.ResumeLayout(False)
         pnlSpacer1.ResumeLayout(False)
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
         Guna2GroupBox1.ResumeLayout(False)
         Guna2GroupBox1.PerformLayout()
         FlowLayoutPanel2.ResumeLayout(False)
@@ -487,4 +524,7 @@ Partial Class RegisterForm
     Friend WithEvents rbtnInstructor As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents rbtnFaculty As Guna.UI2.WinForms.Guna2RadioButton
     Friend WithEvents rbtnStudent As Guna.UI2.WinForms.Guna2RadioButton
+    Friend WithEvents pnlStrengthIndicator As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents lblPassStrengthIndicator As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
